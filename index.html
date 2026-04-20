@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Prasath | Portfolio</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Anton for Headings, Inter for Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div id="preloader-counter">0%</div>
+            <div id="preloader-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar animate-fade-in-down glass-nav">
+        <div class="logo"></div>
+        <div class="nav-links">
+            <a href="#about">01. MANIFESTO</a>
+            <a href="#arsenal">02. ARSENAL</a>
+            <a href="#work">03. ARCHIVES</a>
+            <a href="#credentials">04. CLEARANCE</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image-container reveal-up">
+                <img src="images/photo.jpg" alt="Gokul Prasath" class="hero-photo">
+            </div>
+            <div class="hero-content reveal-up">
+                <h1 class="hero-title">ENGINEERED<br>FOR <span class="accent-text" id="typewriter">IMPACT</span><span class="blinking-cursor">_</span>.</h1>
+                <p class="hero-subtitle">GOKUL PRASATH / SOFTWARE ENGINEER</p>
+                
+                <button class="cta-button" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})">
+                    VIEW THE WORK <span class="arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Stats Ticker (Marquee) -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>B.TECH CSE // ML SPECIALIST // DATA ARCHITECT // IBM CERTIFIED // BACKEND ENGINEER // 100% EXECUTION //</span>
+                <span>B.TECH CSE // ML SPECIALIST // DATA ARCHITECT // IBM CERTIFIED // BACKEND ENGINEER // 100% EXECUTION //</span>
+                <span>B.TECH CSE // ML SPECIALIST // DATA ARCHITECT // IBM CERTIFIED // BACKEND ENGINEER // 100% EXECUTION //</span>
+            </div>
+        </div>
+
+        <!-- Projects / Work Gallery Section -->
+        <section id="work" class="work-section">
+            <div class="section-header reveal-up">
+                <h2>SELECTED <span class="accent-text">WORKS</span></h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Project 1 (Large) -->
+                <a href="https://gp-z007.github.io/report-builder/" target="_blank" rel="noopener" class="project-card large reveal-up" style="display: block; text-decoration: none;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop" alt="Report Builder">
+                    </div>
+                    <div class="project-info">
+                        <h3>REPORT BUILDER</h3>
+                        <p>Dynamic data visualization and deployment.</p>
+                    </div>
+                </a>
+
+                <!-- Project 2 (Tall) -->
+                <a href="https://github.com/GP-z007/Expense-Categorizer-GUI" target="_blank" rel="noopener" class="project-card tall reveal-up" style="transition-delay: 100ms; display: block; text-decoration: none;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" alt="Expense Categorizer GUI">
+                    </div>
+                    <div class="project-info">
+                        <h3>EXPENSE CATEGORIZER</h3>
+                        <p>Automated financial tracking GUI.</p>
+                    </div>
+                </a>
+
+                <!-- Project 3 (Standard) -->
+                <a href="https://github.com/GP-z007/bs" target="_blank" rel="noopener" class="project-card standard reveal-up" style="transition-delay: 150ms; display: block; text-decoration: none;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="BERT Model">
+                    </div>
+                    <div class="project-info">
+                        <h3>BERT MODEL (BS)</h3>
+                        <p>Advanced natural language processing.</p>
+                    </div>
+                </a>
+                
+                <!-- Project 4 (Wide) -->
+                <a href="https://github.com/GP-z007/" target="_blank" rel="noopener" class="project-card wide reveal-up" style="transition-delay: 200ms; display: block; text-decoration: none;">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="More on GitHub">
+                    </div>
+                    <div class="project-info">
+                        <h3>MORE PROJECTS</h3>
+                        <p>Explore full repositories on GitHub.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Manifesto / About -->
+        <section class="manifesto-section" id="about">
+            <div class="manifesto-content reveal-up">
+                <h2>RAW DATA.<br>REFINED <span class="accent-text">POWER.</span></h2>
+                <p>I don't just pass classes. I build systems that push boundaries. My B.Tech in Computer Science is not just a degree—it is my training ground. The chaos of raw data is my terrain; machine learning algorithms are how I conquer it. I force unstructured inputs into structured, high-performing reality. Total execution. Zero fluff.</p>
+            </div>
+        </section>
+
+        <!-- Philosophy Callouts -->
+        <section class="philosophy-section">
+            <div class="callout-grid">
+                <div class="callout reveal-up">
+                    <h3 class="accent-text">REDUCE<br>THE NOISE.</h3>
+                    <p>Focus on Data Cleaning & Efficiency.</p>
+                </div>
+                <div class="callout reveal-up" style="transition-delay: 100ms;">
+                    <h3 class="accent-text">TRAIN<br>TO WIN.</h3>
+                    <p>Focus on Model Accuracy & ML Engine Power.</p>
+                </div>
+                <div class="callout reveal-up" style="transition-delay: 200ms;">
+                    <h3 class="accent-text">CODE WITHOUT<br>LIMITS.</h3>
+                    <p>Focus on Scalable, Unbreakable Backend Architecture.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Status / Active Log -->
+        <section class="log-section reveal-up">
+            <div class="log-container">
+                <div class="log-header">SYSTEM STATUS // LIVE FEED</div>
+                <div class="log-entries">
+                    <div class="log-entry"><span class="log-tag">[SUCCESS]</span> IBM BACK-END SPECIALIZATION COMPLETE</div>
+                    <div class="log-entry"><span class="log-tag">[DEPLOY]</span> NEURAL NETWORK MODEL OPTIMIZED - 94% ACCURACY</div>
+                    <div class="log-entry"><span class="log-tag">[STATUS]</span> B.TECH CSE // SEMESTER 6 IN PROGRESS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Specs / Arsenal -->
+        <section class="arsenal-section" id="arsenal">
+            <div class="section-header reveal-up">
+                <h2>TECH SPECS // <span class="accent-text">THE ARSENAL</span></h2>
+            </div>
+            <div class="arsenal-grid">
+                <div class="arsenal-category reveal-up">
+                    <h3>01 // CORE</h3>
+                    <ul>
+                        <li>PYTHON</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="arsenal-category reveal-up" style="transition-delay: 100ms;">
+                    <h3>02 // AI & DATA</h3>
+                    <ul>
+                        <li>MACHINE LEARNING</li>
+                        <li>DATA SCIENCE</li>
+                        <li>TENSORFLOW / PYTORCH</li>
+                        <li>PANDAS</li>
+                        <li>POWER BI</li>
+                    </ul>
+                </div>
+                <div class="arsenal-category reveal-up" style="transition-delay: 200ms;">
+                    <h3>03 // BACKEND & ARCH</h3>
+                    <ul>
+                        <li>DJANGO / FLASK</li>
+                        <li>MICROSERVICES</li>
+                        <li>SERVERLESS</li>
+                        <li>REST APIS</li>
+                    </ul>
+                </div>
+                <div class="arsenal-category reveal-up" style="transition-delay: 300ms;">
+                    <h3>04 // DEVOPS & CLOUD</h3>
+                    <ul>
+                        <li>DOCKER / KUBERNETES</li>
+                        <li>OPENSHIFT</li>
+                        <li>OBSERVABILITY & MNT.</li>
+                        <li>APP SECURITY</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials / Certifications -->
+        <section class="credentials-section" id="credentials">
+            <div class="section-header reveal-up">
+                <h2>PROVEN GROUNDS // <span class="accent-text">CERTIFICATIONS</span></h2>
+            </div>
+            
+            <h3 class="category-title reveal-up">IBM PROFESSIONAL SPECIALIZATIONS</h3>
+            <div class="credentials-grid">
+                <div class="credential-card reveal-up">IBM Back-End Development</div>
+                <div class="credential-card reveal-up">Developing AI Applications with Python & Flask</div>
+                <div class="credential-card reveal-up">Python for Data Science, AI & Development</div>
+                <div class="credential-card reveal-up">App Development using Microservices & Serverless</div>
+                <div class="credential-card reveal-up">Intro to Containers w/ Docker, Kubernetes & OpenShift</div>
+                <div class="credential-card reveal-up">Django Application Development with SQL</div>
+                <div class="credential-card reveal-up">App Security for Developers & DevOps</div>
+                <div class="credential-card reveal-up">Monitoring & Observability for DevOps</div>
+                <div class="credential-card reveal-up">Back-end Application Development Capstone</div>
+            </div>
+
+            <h3 class="category-title reveal-up" style="margin-top: 6rem;">SPECIALIZED TRAINING</h3>
+            <div class="credentials-grid">
+                <div class="credential-card reveal-up">Advanced Power BI Workshop (upGrad)</div>
+                <div class="credential-card reveal-up">Intro to Cyber Security (Infosys Springboard)</div>
+            </div>
+
+            <div class="cert-cta reveal-up">
+                <a href="https://www.linkedin.com/in/gokul-prasath-1897a5379/details/certifications/" target="_blank" rel="noopener" class="minimal-button">VERIFY CREDENTIALS ON LINKEDIN ↗</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="cta-footer reveal-up">
+            <div class="cta-content">
+                <h2 class="massive-cta-text">READY TO BUILD?</h2>
+                <a href="mailto:gokul.prasath@example.com" class="solid-black-btn">GET IN TOUCH</a>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="https://github.com/GP-z007/" target="_blank" rel="noopener">GITHUB</a>
+                    <a href="https://leetcode.com/u/gp_z007/" target="_blank" rel="noopener">LEETCODE</a>
+                    <a href="https://www.linkedin.com/in/gokul-prasath-1897a5379/" target="_blank" rel="noopener">LINKEDIN</a>
+                    <a href="https://www.duolingo.com/profile/gokulz007" target="_blank" rel="noopener">DUOLINGO</a>
+                    <a href="https://stackoverflow.com/users/31319950/gokul-prasath" target="_blank" rel="noopener">STACKOVERFLOW</a>
+                </div>
+                <p class="copyright">&copy; GOKUL PRASATH / ENGINEERED FOR IMPACT</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
